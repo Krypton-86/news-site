@@ -36,8 +36,21 @@ function news_site_form_system_theme_settings_alter(&$form, FormStateInterface $
  */
 function news_site_preprocess_node(&$variables) {
   $node = $variables['node'];
-  if ($variables['view_node'] === 'teaser' || $node->getType() === 'news') {
-//    $variables
+  if ($variables['view_node'] === 'slider' || $node->getType() === 'news') {
     $variables["content"]["field_image"][0]["#item_attributes"] = ['class' => ['d-block', 'w-100']];
+  }
+  if ($variables['view_node'] === 'teaser' || $node->getType() === 'news') {
+    $variables["content"]["field_image"][0]["#item_attributes"] = ['class' => ['card-img-top']];
+  }
+
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function news_site_preprocess_paragraph(&$variables) {
+  $paragraph = $variables['paragraph'];
+  if ($paragraph->getType() === 'latest_news') {
+    $variables["content"] = views_embed_view('news', 'block_1');
   }
 }

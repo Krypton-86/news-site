@@ -59,10 +59,7 @@
  * @see template_preprocess_node()
  */
 #}
-<div class="card h-100">
-  {{ content.field_image }}
-  <div class="card-body">
-    <h5 class="card-title">{{ label }}</h5>
-    <p class="card-text">{{ content.field_card_description }}</p>
-  </div>
+{{ content.field_image }}
+<div class="carousel-caption d-none d-md-block">
+  {{ label }}
 </div>

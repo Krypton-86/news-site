@@ -1,0 +1,22 @@
+uuid: 8e5f1d85-1f99-4093-9687-61e21e56c441
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - news_site
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: news_site_powered
+theme: news_site
+region: footer_fifth
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

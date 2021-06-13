@@ -1,0 +1,41 @@
+uuid: 53994f6d-6d16-4ff3-90c1-a25f9cca2b86
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contents
+    - node.type.homepage
+    - paragraphs.paragraphs_type.latest_news
+    - paragraphs.paragraphs_type.slider
+    - paragraphs.paragraphs_type.wysiwyg
+  module:
+    - entity_reference_revisions
+id: node.homepage.field_contents
+field_name: field_contents
+entity_type: node
+bundle: homepage
+label: Contents
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      slider: slider
+      latest_news: latest_news
+      wysiwyg: wysiwyg
+    target_bundles_drag_drop:
+      latest_news:
+        enabled: true
+        weight: 4
+      slider:
+        enabled: true
+        weight: 3
+      wysiwyg:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

@@ -1,0 +1,15 @@
+uuid: 0cabeea8-88b2-4bed-b8da-fd00a165acbf
+langcode: en
+status: true
+dependencies: {  }
+name: slider
+label: 'Slider (800x400)'
+effects:
+  c8fdf57b-5ba8-4eb5-baee-374cfc29dfff:
+    uuid: c8fdf57b-5ba8-4eb5-baee-374cfc29dfff
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 400
+      anchor: center-center

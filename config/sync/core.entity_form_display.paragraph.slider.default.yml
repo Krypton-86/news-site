@@ -1,0 +1,25 @@
+uuid: aad3ff4d-d594-455b-907e-5fed7ba2bd03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slider.field_news
+    - paragraphs.paragraphs_type.slider
+id: paragraph.slider.default
+targetEntityType: paragraph
+bundle: slider
+mode: default
+content:
+  field_news:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

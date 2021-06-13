@@ -1,0 +1,19 @@
+uuid: f0bca2f3-f377-45bc-92b1-626bb386cf99
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_card_description
+    - node.type.news
+id: node.news.field_card_description
+field_name: field_card_description
+entity_type: node
+bundle: news
+label: 'Card description'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,105 @@
+uuid: e8da161a-c4a5-495a-95ec-4a1ee7667fff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news.comment
+    - field.field.node.news.field_card_description
+    - field.field.node.news.field_contents
+    - field.field.node.news.field_image
+    - node.type.news
+  module:
+    - comment
+    - media_library
+    - paragraphs
+    - path
+id: node.news.default
+targetEntityType: node
+bundle: news
+mode: default
+content:
+  comment:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_card_description:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_contents:
+    type: entity_reference_paragraphs
+    weight: 9
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_image:
+    type: media_library_widget
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

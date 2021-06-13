@@ -1,0 +1,22 @@
+uuid: eeba56ef-1e3e-4eb0-91f5-1d33afacb215
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - news_site
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: news_site_help
+theme: news_site
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,10 @@
+uuid: bc6a4af7-3922-4384-b6c1-fa97b5e86b49
+langcode: en
+status: true
+dependencies: {  }
+id: wysiwyg
+label: WYSIWYG
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

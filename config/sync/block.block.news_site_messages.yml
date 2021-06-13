@@ -1,0 +1,22 @@
+uuid: 5db1ff1d-802b-4145-8a2a-03c3b2a5bca2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - news_site
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: news_site_messages
+theme: news_site
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
